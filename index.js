@@ -1,6 +1,6 @@
 'use strict';
 
-const copyTextToClipboard = function (input) {
+export default function (input) {
 	const element = document.createElement('textarea');
 	const previouslyFocusedElement = document.activeElement;
 
@@ -46,7 +46,3 @@ const copyTextToClipboard = function (input) {
 
 	return isSuccess;
 };
-
-module.exports = copyTextToClipboard;
-// TODO: Remove this for the next major release
-module.exports.default = copyTextToClipboard;
